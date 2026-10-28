@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio cá nhân">
+    <title>Portfolio cá nhân</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Thanh điều hướng -->
+    <header class="site-header">
+        <a class="logo" href="#home">PORTFOLIO<span>.</span></a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Mở menu"
+                aria-expanded="false"
+                aria-controls="mainNav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="#home" class="nav-link active">Trang chủ</a>
+            <a href="#about" class="nav-link">Giới thiệu</a>
+            <a href="#skills" class="nav-link">Kỹ năng</a>
+            <a href="#projects" class="nav-link">Dự án</a>
+            <a href="#contact" class="nav-link">Liên hệ</a>
+        </nav>
+
+        <button class="theme-toggle" id="themeToggle"
+                type="button" aria-label="Chuyển giao diện">
+            <span id="themeIcon">☾</span>
+        </button>
+    </header>
+
+    <main>
+
+        <!-- 1. Trang chủ -->
+        <section class="hero section" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">XIN CHÀO, TÔI LÀ</p>
+
+                <h1>Phan Hải Nam</h1>
+                <h2>Sinh viên - Khoa học dữ liệu</h2>
+
+                <p class="hero-description">
+                    Tôi là một sinh viên ngành khoa học dữ liệu.
+                    Tôi bắt đầu biết đến ngành này qua lời giới thiệu của anh tôi, người cũng có xuất phát điểm là một sinh viên ngành công nghệ thông tin.
+                    Sau khi tìm hiểu cũng như trải nghiệm ngành học thì em nhận thấy đây còn là một ngành khá mới, chỉ vừa xuất hiện trong vài năm trở lại đây
+                    nhưng tiềm năng của ngành này là khá lớn, đặc biệt đặt trong bối cảnh AI hóa ngày nay.
+                    Tôi nhận định rằng bản thân vân chưa có đủ năng lực, khả năng vững để sẵn sàng cho chặng đường tương lai trong lĩnh vực này.
+                    Vì thế, tôi vẫn đang từng ngày cố gắng phấn đấu để ngày càng hoàn thiện bản thân cả trong kĩ năng, độ hiểu biết trong lĩnh vực này. 
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="button button-primary">
+                        Xem dự án
+                    </a>
+
+                    <a href="#contact" class="button button-outline">
+                        Liên hệ với tôi
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/namph1377-sketch" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <!-- Có thể thay khung này bằng ảnh cá nhân -->
+                <img
+                    src="images/avatar.png"
+                    alt="Ảnh đại diện"
+                    class="avatar-image"
+                >
+
+                <div class="floating-tag tag-one">
+                    Machine Learning,
+                    Data Analysist
+                </div>
+
+                <div class="floating-tag tag-two">
+                    Python, SQL, HTML
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Giới thiệu -->
+        <section class="section" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">TÌM HIỂU THÊM</p>
+                <h2>Giới thiệu</h2>
+                <p>[Một câu ngắn giới thiệu nội dung phần này.]</p>
+            </div>
+
+            <div class="about-card">
+                <div>
+                    <h3>Một chút về tôi</h3>
+
+                    <p>
+                        Tôi là một người khá vui vẻ, hòa đồng, dễ gắn kết,
+                         và nỗ lực đạt được mục tiêu mà mình đề ra.
+                        Điều mà tôi hướng đến là một công việc mà ở đó tôi có thể học hỏi thêm nhiều kiến thức,
+                        kết nối với nhiều người tài giỏi hơn.
+                    </p>
+                </div>
+
+                <div class="about-details">
+                    <p>
+                        <span>Họ tên</span>
+                        <strong>Phan Hải Nam</strong>
+                    </p>
+
+                    <p>
+                        <span>Ngành học</span>
+                        <strong>Khoa học dữ liệu</strong>
+                    </p>
+
+                    <p>
+                        <span>Địa điểm</span>
+                        <strong>Thủ Đức, TP.Hồ Chí Minh, Việt Nam</strong>
+                    </p>
+
+                    <p>
+                        <span>Email</span>
+                        <strong>namph1377@ut.edu.vn</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Kỹ năng -->
+        <section class="section" id="skills">
+            <div class="section-heading">
+                <p class="eyebrow">NĂNG LỰC</p>
+                <h2>Kỹ năng</h2>
+                <p> Hiểu và đọc được sourcecode của một số ngôn ngữ lập trình, 
+                    Biết phân tích dữ liệu, 
+                    Có khả năng cơ bản về học máy.</p>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <div class="card-icon">01</div>
+                    <h3>Lập trình</h3>
+                    <p>Thông hiểu về một số ngôn ngữ lập trình và cơ sơ dữ liệu</p>
+
+                    <div class="tag-list">
+                        <span>Python: xử lý dữ liệu, xây dựng thuật toán và triển khai các mô hình học máy cơ bản.</span>
+                        <span>SQL/MySQL: thiết kế cơ sở dữ liệu, truy vấn và quản lý dữ liệu.</span>
+                        <span>C++: thực hành thuật toán và cấu trúc dữ liệu cơ bản.</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <div class="card-icon">02</div>
+                    <h3>Phân tích dữ liệu</h3>
+                    <p>Hiểu được quy trình và tiến hành sơ bộ quá trình xử lý, phân tích dữ liệu</p>
+
+                    <div class="tag-list">
+                        <span>Tiền xử lý và làm sạch dữ liệu.</span>
+                        <span>Phân tích dữ liệu văn bản và dữ liệu dạng bảng.</span>
+                        <span>Sử dụng TF-IDF và Cosine Similarity để biểu diễn, so sánh văn bản.</span>
+                        <span>Đánh giá kết quả bằng Accuracy, Precision, Recall, F1-score và Confusion Matrix.</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <div class="card-icon">03</div>
+                    <h3>Học máy</h3>
+                    <p>Biết, hiểu và vận dụng cơ bản về quy trình tiến hành huấn luyện mô hình học máy</p>
+
+                    <div class="tag-list">
+                        <span>Thực hành các mô hình phân loại như Naive Bayes, Logistic Regression và SVM.</span>
+                        <span>Tìm hiểu K-Means và K-Means++ cho bài toán phân cụm dữ liệu.</span>
+                        <span>Thực hiện chia tập dữ liệu, kiểm định chéo và đánh giá mô hình.</span>
+                        <span>Có kiến thức cơ bản về xử lý ngôn ngữ tự nhiên (NLP).</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 4. Dự án -->
+        <section class="section" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow">SẢN PHẨM CỦA TÔI</p>
+                <h2>Dự án tiêu biểu</h2>
+                <p>
+                    Thiết kế mô phỏng hệ thống quản lý thư viện
+                    Thiết kế mô phỏng hệ thống quản lý sinh viên
+                    Thiết kế hệ thống tra cứu tìm kiếm âm nhạc 
+                </p>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-cover cover-one">
+                        <span>DỰ ÁN 01</span>
+                    </div>
+
+                    <div class="project-body">
+                        <p class="project-type">Thiết kế phần mềm | 2026</p>
+                        <h3>Thiết kế mô phỏng hệ thống quản lý thư viện</h3>
+
+                        <p>
+                            Xây dựng mô phỏng hệ thống quản lý việc mượn trả của sinh viên trong khuôn khổ trường đại học Giao thông - Vận tải
+                        </p>
+
+                        <div class="tag-list">
+                            <span>Python</span>
+                            <span>React-Javascript</span>
+                        </div>
+
+                        <a href="https://github.com/hoanhh4977/library-management-system" class="text-link"
+                           target="_blank" rel="noreferrer">
+                            Xem mã nguồn ↗
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-cover cover-two">
+                        <span>DỰ ÁN 02</span>
+                    </div>
+
+                    <div class="project-body">
+                        <p class="project-type">Thiết kế phần mềm | 2026</p>
+                        <h3>Thiết kế mô phỏng hệ thống quản lý sinh viên</h3>
+
+                        <p>
+                            Hệ thống mô phỏng trang quản lý sinh viên, hỗ trợ các chức năng như lưu trữ, cập nhật thông tin, tạo lớp, xây dựng thời khóa biểu
+                        </p>
+
+                        <div class="tag-list">
+                            <span>Python</span>
+                            <span>MySQL</span>
+                        </div>
+
+                        <a href="https://github.com/namph1377-sketch/SMS" class="text-link"
+                           target="_blank" rel="noreferrer">
+                            Xem mã nguồn ↗
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-cover cover-three">
+                        <span>DỰ ÁN 03</span>
+                    </div>
+
+                    <div class="project-body">
+                        <p class="project-type">Thiết kế phần mềm | 2026</p>
+                        <h3>Thiết kế hệ thống tra cứu tìm kiếm âm nhạc </h3>
+
+                        <p>
+                            Mô phỏng kĩ thuật search - engine chú trọng vào việc tìm kiếm thể loại âm nhạc, tích hợp thêm sử dụng mô hình ngôn ngữ để thấu hiểu ngôn ngữ người dùng
+                        </p>
+
+                        <div class="tag-list">
+                            <span>Python</span>
+                            <span>MySQL</span>
+                        </div>
+
+                        <a href="https://github.com/namph1377-sketch/SearchSong" class="text-link"
+                           target="_blank" rel="noreferrer">
+                            Xem mã nguồn ↗
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 5. Liên hệ -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-description">
+                Feel free to contact me through the following platforms.
+                </p>
+
+                <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>namph1377@ut.edu.vn</p>
+                </div>
+
+                <div class="contact-item">
+                <h3>Zalo</h3>
+                <p>0941168632</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Facebook</h3>
+                    <a href="https://www.facebook.com/share/18xiyTJ2FK/" target="_blank">
+                    Visit my Facebook
+                    </a>
+                </div>
+                </div>
+            </div>
+            </section>
+
+    </main>
+
+    <!-- Chân trang -->
+    <footer class="site-footer">
+        <a class="logo" href="#home">PORTFOLIO<span>.</span></a>
+
+        <p>
+            © <span id="currentYear"></span>
+            Hải Nam. Được xây dựng bằng HTML, CSS và JavaScript.
+        </p>
+
+        <a href="#home" class="back-to-top">
+            Lên đầu trang ↑
+        </a>
+    </footer>
+
+</body>
+</html>
