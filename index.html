@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phan Hải Nam | Portfolio</title>
+    <meta name="description" content="Portfolio cá nhân của Phan Hải Nam - Sinh viên Khoa học dữ liệu (Data Science), định hướng Data Analyst (DA) & Business Analyst (BA).">
+
+    <!-- Google Fonts tối ưu hoàn hảo cho Tiếng Việt: Be Vietnam Pro & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Thanh tiến trình cuộn dọc trên cùng -->
+    <div class="scroll-progress-line" id="scrollProgress"></div>
+
+    <!-- Thanh điều hướng cố định trên cùng -->
+    <header class="header-nav" id="headerNav">
+        <div class="nav-wrapper">
+            <a href="#hero" class="site-brand">
+                <span class="brand-monogram">HN</span>
+                <div class="brand-info">
+                    <strong>PHAN HẢI NAM</strong>
+                    <small>PORTFOLIO</small>
+                </div>
+            </a>
+
+            <!-- Menu trên máy tính -->
+            <nav class="desktop-menu" id="desktopMenu">
+                <a href="#hero" class="nav-item active">Trang chủ</a>
+                <a href="#about" class="nav-item">Về tôi</a>
+                <a href="#journey" class="nav-item">Hành trình</a>
+                <a href="#path" class="nav-item">Con đường</a>
+                <a href="#skills" class="nav-item">Kỹ năng</a>
+                <a href="#projects" class="nav-item">Dự án</a>
+                <a href="#contact" class="nav-item">Liên hệ</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn-cta-nav">Liên hệ ngay</a>
+                <!-- Nút Hamburger trên điện thoại -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Mở menu di động">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu trượt trên điện thoại -->
+        <div class="mobile-drawer" id="mobileDrawer">
+            <nav class="drawer-nav">
+                <a href="#hero" class="drawer-link">Trang chủ</a>
+                <a href="#about" class="drawer-link">01. Về tôi</a>
+                <a href="#journey" class="drawer-link">02. Hành trình</a>
+                <a href="#path" class="drawer-link">03. Con đường</a>
+                <a href="#skills" class="drawer-link">04. Kỹ năng</a>
+                <a href="#projects" class="drawer-link">05. Dự án</a>
+                <a href="#contact" class="drawer-link">06. Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- NỘI DUNG CHÍNH CUỘN DỌC - IN TRỰC TIẾP LÊN BACKGROUND - NỘI DUNG CHIA NHỎ THOÁNG ĐÃNG -->
+    <main class="main-content">
+
+        <!-- ==============================================
+             SECTION 01: TRANG BÌA (HERO)
+             Nền: Background1.jpg (Vịnh Vĩnh Hy)
+             ============================================== -->
+        <section class="section-full hero-section" id="hero" style="--bg-url: url('images/Background1.jpg')">
+            <div class="bg-scrim"></div>
+            
+            <div class="container section-container">
+                <div class="hero-grid">
+                    
+                    <div class="hero-text-content">
+                        <div class="tag-badge">
+                            <span class="badge-dot"></span>
+                            <span>KHOA HỌC DỮ LIỆU · DATA SCIENCE</span>
+                        </div>
+
+                        <h1 class="hero-name">PHAN HẢI NAM</h1>
+                        
+                        <p class="hero-subhead">
+                            Data Science Student · Interested in Data Analyst & Business Analyst
+                        </p>
+
+                        <div class="hero-quote-block">
+                            <p class="quote-text">
+                                “Trân trọng những gì mình có, giữ tinh thần lạc quan và không ngừng học hỏi, nỗ lực hết mình trên hành trình phát triển bản thân.”
+                            </p>
+                        </div>
+
+                        <div class="hero-highlights-row">
+                            <span class="highlight-chip">🎯 Định hướng DA / BA</span>
+                            <span class="highlight-chip">🔍 Tự học & Đào sâu</span>
+                            <span class="highlight-chip">🌱 Kiên trì & Lạc quan</span>
+                        </div>
+
+                        <div class="hero-button-group">
+                            <a href="#about" class="btn-primary-coral">
+                                <span>Khám phá Portfolio</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                            </a>
+                            <a href="#contact" class="btn-secondary-teal">
+                                <span>Kết nối với tôi</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-media-content">
+                        <div class="portrait-glow-wrap">
+                            <img src="images/avatar.png" alt="Chân dung Phan Hải Nam" class="portrait-img">
+                            <div class="portrait-badge">
+                                <strong>PHAN HẢI NAM</strong>
+                                <small>Data Science Enthusiast</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-down-indicator" aria-label="Cuộn xuống để xem tiếp">
+                <span>Cuộn xuống khám phá</span>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+        </section>
+
+
+        <!-- ==============================================
+             SECTION 02: MỘT CHÚT VỀ TÔI
+             Nền: Background2.jpg (Hang Rái thác nước hoàng hôn)
+             ============================================== -->
+        <section class="section-full" id="about" style="--bg-url: url('images/Background2.jpg')">
+            <div class="bg-scrim"></div>
+
+            <div class="container section-container">
+                <div class="section-title-wrap">
+                    <span class="section-eyebrow">PHẦN 01</span>
+                    <h2 class="section-title">MỘT CHÚT VỀ TÔI</h2>
+                    <p class="section-desc">Hành trình khám phá bản thân và niềm đam mê với Khoa học dữ liệu</p>
+                </div>
+
+                <div class="about-flex-layout">
+                    
+                    <div class="about-text-pane">
+                        
+                        <!-- Nội dung chia nhỏ thành các ý gạch đầu dòng thoáng đãng -->
+                        <div class="bio-airy-blocks">
+                            <div class="bio-point">
+                                <span class="bio-dot"></span>
+                                <p>Tôi là <strong>Hải Nam</strong>, hiện đang theo học chuyên ngành <strong>Khoa học dữ liệu (Data Science)</strong>.</p>
+                            </div>
+
+                            <div class="bio-point">
+                                <span class="bio-dot"></span>
+                                <p>Tôi đang trên hành trình tìm hiểu bản thân, khám phá thế giới xung quanh và từng bước hoàn thiện chính mình.</p>
+                            </div>
+
+                            <div class="bio-point">
+                                <span class="bio-dot"></span>
+                                <p>Tôi không nghĩ mình đã có một con đường thật sự rõ ràng từ đầu, nhưng luôn giữ sự <strong>tò mò</strong>, tinh thần <strong>học hỏi</strong> và cố gắng hết khả năng trong những điều mình lựa chọn.</p>
+                            </div>
+
+                            <div class="bio-point">
+                                <span class="bio-dot"></span>
+                                <p>Với tôi, dữ liệu là công cụ giúp giải mã các bài toán thực tiễn và mang lại giá trị có ý nghĩa cho cộng đồng.</p>
+                            </div>
+                        </div>
+
+                        <!-- Thẻ thông tin vắn tắt in trực tiếp -->
+                        <div class="profile-stats-grid">
+                            <div class="stat-cell">
+                                <span class="stat-label">Họ và tên</span>
+                                <strong class="stat-value">Phan Hải Nam</strong>
+                            </div>
+                            <div class="stat-cell">
+                                <span class="stat-label">Chuyên ngành</span>
+                                <strong class="stat-value">Khoa học dữ liệu</strong>
+                            </div>
+                            <div class="stat-cell">
+                                <span class="stat-label">Định hướng nghề</span>
+                                <strong class="stat-value">Data Analyst · Business Analyst</strong>
+                            </div>
+                            <div class="stat-cell">
+                                <span class="stat-label">Email học tập</span>
+                                <strong class="stat-value">namph1377@ut.edu.vn</strong>
+                            </div>
+                        </div>
+
+                        <div class="about-personality-tags">
+                            <span class="tag-bubble">✨ Luôn tò mò & ham học</span>
+                            <span class="tag-bubble">🌊 Điềm tĩnh & kiên trì</span>
+                            <span class="tag-bubble">🎧 Lắng nghe & thấu cảm</span>
+                        </div>
+                    </div>
+
+                    <div class="about-photo-pane">
+                        <div class="portrait-photo-box">
+                            <img src="images/Ảnh1.jpg" alt="Phan Hải Nam" class="accent-photo">
+                            <div class="photo-info-bar">
+                                <strong>HẢI NAM</strong>
+                                <span>Luôn giữ tinh thần cởi mở & cầu tiến</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==============================================
+             SECTION 03: TÔI ĐÃ ĐI ĐẾN ĐÂY NHƯ THẾ NÀO?
+             Nền: Background5.jpg (Cánh đồng quạt gió và lúa vàng)
+             Bố cục đan xen Ảnh 5 & Ảnh 3, thụt dòng nghệ thuật
+             ============================================== -->
+        <section class="section-full" id="journey" style="--bg-url: url('images/Background5.jpg')">
+            <div class="bg-scrim"></div>
+
+            <div class="container section-container">
+                <div class="section-title-wrap">
+                    <span class="section-eyebrow">PHẦN 02</span>
+                    <h2 class="section-title">TÔI ĐÃ ĐI ĐẾN ĐÂY NHƯ THẾ NÀO?</h2>
+                    <p class="section-desc">Những câu chuyện và trải nghiệm đúc kết nên con người tôi ngày hôm nay</p>
+                </div>
+
+                <div class="journey-interwoven-stream">
+                    
+                    <!-- ================= CỤM 1: NỘI DUNG (TRÁI) - ẢNH 5 (PHẢI) ================= -->
+                    <div class="interwoven-row row-text-left">
+                        <div class="interwoven-text-col">
+                            
+                            <!-- Câu chuyện 01 -->
+                            <article class="staggered-story story-step-1">
+                                <div class="story-header-pill">
+                                    <span class="story-idx-badge">01</span>
+                                    <h3 class="story-headline">Một lựa chọn không nằm trong dự định ban đầu</h3>
+                                </div>
+                                <div class="story-indent-box indent-lvl-1">
+                                    <p class="story-lead-sentence">Khởi đầu với nhiều băn khoăn trước những ngã rẽ cuộc sống:</p>
+                                    <ul class="staggered-bullet-list">
+                                        <li>Ban đầu, Khoa học dữ liệu không phải là con đường tôi nghĩ mình sẽ lựa chọn; đứng trước nhiều ngã rẽ, tôi từng khá loay hoay.</li>
+                                        <li>Sau những lời khuyên từ những người quan trọng, tôi quyết định dấn thân và gắn bó với ngành.</li>
+                                        <li>Sau hai năm trải nghiệm, tôi dần nhận ra tiềm năng, ưu điểm của ngành học và hiểu rõ hơn hạn chế bản thân.</li>
+                                        <li class="bullet-highlight">Có những lúc muốn gục ngã, nhưng tôi vẫn tự nhắc mình phải tiếp tục bước đi, nỗ lực hết mình và không dễ dàng bỏ cuộc giữa chừng.</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <!-- Câu chuyện 02 (Thụt dòng so le vào trong) -->
+                            <article class="staggered-story story-step-2 stagger-offset">
+                                <div class="story-header-pill">
+                                    <span class="story-idx-badge">02</span>
+                                    <h3 class="story-headline">Tôi học theo cách của riêng mình</h3>
+                                </div>
+                                <div class="story-indent-box indent-lvl-2">
+                                    <p class="story-lead-sentence">Tự xây dựng nhịp độ phù hợp với bản thân:</p>
+                                    <ul class="staggered-bullet-list">
+                                        <li>Tôi không có một quy trình học tập cố định gò bó.</li>
+                                        <li>Thường bắt đầu với những việc cảm thấy cần thiết hoặc nhẹ nhàng để lấy tinh thần trước khi làm việc lớn hơn.</li>
+                                        <li>Khi có quá nhiều việc, tôi tự sắp xếp và kiên nhẫn giải quyết tuần tự từng thứ một.</li>
+                                        <li>Tôi nhận thấy mình không thực sự làm tốt trong môi trường quá áp lực; cần không gian thoải mái để phát huy tối đa khả năng.</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <!-- Ảnh 5: Hải Nam ngồi suy ngẫm bên bức tượng chú ếch trong vườn -->
+                        <div class="interwoven-media-col">
+                            <div class="journey-art-photo-card card-glow-teal">
+                                <img src="images/Ảnh5.jpg" alt="Phan Hải Nam ngồi suy ngẫm trong không gian xanh" class="art-photo-img">
+                                <div class="art-photo-caption">
+                                    <span class="caption-tag">TỰ THẤU HIỂU & CHIÊM NGHIỆM</span>
+                                    <p>Khoảng lặng suy ngẫm giúp tôi hiểu rõ chính mình và chọn cho mình nhịp bước học tập phù hợp nhất.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- ================= CỤM 2: ẢNH 3 (TRÁI) - NỘI DUNG (PHẢI) [ĐAN XEN ĐẢO CHIỀU] ================= -->
+                    <div class="interwoven-row row-text-right">
+                        
+                        <!-- Ảnh 3: Hải Nam ngoài trời tươi vui bên tượng khủng long -->
+                        <div class="interwoven-media-col">
+                            <div class="journey-art-photo-card card-glow-coral">
+                                <img src="images/Ảnh3.jpg" alt="Những khoảnh khắc đời thường của Hải Nam" class="art-photo-img">
+                                <div class="art-photo-caption">
+                                    <span class="caption-tag">ĐỜI THƯỜNG & NĂNG LƯỢNG TÍCH CỰC</span>
+                                    <p>Tận hưởng niềm vui từ những điều giản dị để nuôi dưỡng tinh thần lạc quan và sự tươi mới.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="interwoven-text-col">
+                            
+                            <!-- Câu chuyện 03 -->
+                            <article class="staggered-story story-step-3">
+                                <div class="story-header-pill">
+                                    <span class="story-idx-badge">03</span>
+                                    <h3 class="story-headline">Những điều bình dị làm nên cuộc sống</h3>
+                                </div>
+                                <div class="story-indent-box indent-lvl-1">
+                                    <p class="story-lead-sentence">Nơi tâm hồn được nghỉ ngơi sau những giờ học tập:</p>
+                                    <ul class="staggered-bullet-list">
+                                        <li>Niềm vui đời thường đôi khi chỉ đơn giản là xem một bộ phim yêu thích, nấu ăn hay làm việc nhà.</li>
+                                        <li>Đắm mình vào một cuốn sách trinh thám lôi cuốn hay đơn giản là được ngủ một giấc thật ngon.</li>
+                                        <li>Tôi yêu thích những điều nhỏ nhặt, bình dị và tìm thấy nguồn năng lượng tích cực trong chính những điều dung dị ấy.</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <!-- Câu chuyện 04 (Thụt dòng so le vào trong) -->
+                            <article class="staggered-story story-step-4 stagger-offset">
+                                <div class="story-header-pill">
+                                    <span class="story-idx-badge">04</span>
+                                    <h3 class="story-headline">Học hỏi không chỉ nằm trong giảng đường</h3>
+                                </div>
+                                <div class="story-indent-box indent-lvl-2">
+                                    <p class="story-lead-sentence">Chủ động mở rộng thế giới quan:</p>
+                                    <ul class="staggered-bullet-list">
+                                        <li>Ngoài kiến thức chuyên ngành, tôi chủ động trau dồi các kỹ năng khác như học tiếng Anh và học bơi.</li>
+                                        <li>Thường xuyên khám phá những chân trời kiến thức mới ngoài khuôn khổ bài giảng.</li>
+                                        <li>Tôi tin rằng việc học không giới hạn trong trường lớp, mà đến từ trải nghiệm thực tế mỗi ngày.</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <!-- Câu chuyện 05 -->
+                            <article class="staggered-story story-step-5">
+                                <div class="story-header-pill">
+                                    <span class="story-idx-badge">05</span>
+                                    <h3 class="story-headline">Tôi thích lắng nghe những câu chuyện</h3>
+                                </div>
+                                <div class="story-indent-box indent-lvl-1">
+                                    <p class="story-lead-sentence">Khám phá thế giới qua lăng kính của mọi người:</p>
+                                    <ul class="staggered-bullet-list">
+                                        <li>Tôi thích khơi mở đối thoại và tìm hiểu thế giới qua góc nhìn của người đối diện.</li>
+                                        <li>Mỗi câu chuyện đều mang đến cho tôi cảm giác như vừa khám phá thêm một điều mới.</li>
+                                        <li>Sự tò mò giúp tôi thường xuyên đặt câu hỏi để tìm hiểu sâu hơn về mọi thứ xung quanh.</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==============================================
+             SECTION 04: CON ĐƯỜNG TÔI ĐANG CHỌN
+             Nền: Background3.jpg (Tháp Chàm Po Klong Garai)
+             ============================================== -->
+        <section class="section-full" id="path" style="--bg-url: url('images/Background3.jpg')">
+            <div class="bg-scrim"></div>
+
+            <div class="container section-container">
+                <div class="section-title-wrap">
+                    <span class="section-eyebrow">PHẦN 03</span>
+                    <h2 class="section-title">CON ĐƯỜNG TÔI ĐANG CHỌN</h2>
+                    <p class="section-desc">Định hướng tương lai, kiên định với mục tiêu và từng bước vững chắc</p>
+                </div>
+
+                <div class="path-content-layout">
+                    
+                    <div class="path-media-pane">
+                        <div class="future-photo-box">
+                            <img src="images/Ảnh4.jpg" alt="Phan Hải Nam hướng về tương lai" class="future-img">
+                            <div class="future-caption">
+                                <strong>VƯƠN VỀ PHÍA TRƯỚC</strong>
+                                <p>Từng bước nhỏ vững vàng, không ngừng học hỏi và tích lũy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 Khối mục tiêu chia nhỏ súc tích -->
+                    <div class="path-goals-pane">
+                        
+                        <div class="goal-entry">
+                            <div class="goal-icon">🎯</div>
+                            <div class="goal-body">
+                                <h3>Hiện tại, tôi đang hướng đến đâu?</h3>
+                                <ul class="sub-points-list">
+                                    <li>Hiện tại, tôi đang theo học ngành Khoa học dữ liệu (Data Science).</li>
+                                    <li>Mong muốn phát triển chuyên sâu theo một trong hai hướng: <strong>Data Analyst (DA)</strong> hoặc <strong>Business Analyst (BA)</strong>.</li>
+                                    <li>Chủ động tìm hiểu sâu để định hình con đường phù hợp nhất với năng lực bản thân.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="goal-entry">
+                            <div class="goal-icon">📚</div>
+                            <div class="goal-body">
+                                <h3>Những điều tôi muốn hoàn thành trước mắt</h3>
+                                <ul class="sub-points-list">
+                                    <li>Hoàn thiện nền tảng kiến thức và kỹ năng thực tế cần thiết cho một DA hoặc BA.</li>
+                                    <li>Bổ sung các kỹ năng hỗ trợ xử lý dữ liệu và mô hình hóa bài toán.</li>
+                                    <li>Đặc biệt đầu tư cải thiện <strong>ngoại ngữ (Tiếng Anh)</strong> để mở rộng cơ hội học hỏi và phát triển.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="goal-entry">
+                            <div class="goal-icon">🏠</div>
+                            <div class="goal-body">
+                                <h3>Một cột mốc cho tương lai</h3>
+                                <ul class="sub-points-list">
+                                    <li>Xây dựng một <strong>công việc ổn định</strong> với nguồn thu nhập vững vàng.</li>
+                                    <li>Đủ năng lực tự chăm lo tốt cho bản thân và phụ giúp gia đình.</li>
+                                    <li>Xem đây là cột mốc cốt lõi ghi nhận sự trưởng thành và tính tự lập.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="goal-entry">
+                            <div class="goal-icon">🌱</div>
+                            <div class="goal-body">
+                                <h3>Tôi không vội đi đến đích</h3>
+                                <ul class="sub-points-list">
+                                    <li>Không đặt ra những mục tiêu xa vời khi bản thân vẫn còn nhiều điều cần hoàn thiện.</li>
+                                    <li>Tập trung giải quyết tốt từng mục tiêu nhỏ trước mắt rồi từng bước tiến xa hơn.</li>
+                                    <li>Tin tưởng rằng chỉ cần kiên trì tiến bước, con đường phù hợp sẽ dần mở ra.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==============================================
+             SECTION 05: CÁCH TÔI HỌC VÀ LÀM VIỆC
+             Nền: Background4.jpg (Bảo tàng & Công trình kiến trúc)
+             ============================================== -->
+        <section class="section-full" id="skills" style="--bg-url: url('images/Background4.jpg')">
+            <div class="bg-scrim"></div>
+
+            <div class="container section-container">
+                <div class="section-title-wrap">
+                    <span class="section-eyebrow">PHẦN 04</span>
+                    <h2 class="section-title">CÁCH TÔI HỌC VÀ LÀM VIỆC</h2>
+                    <p class="section-desc">3 phẩm chất tư duy cốt lõi và các công cụ thực chiến</p>
+                </div>
+
+                <!-- 3 Trụ cột tư duy chia thành các ý mạch lạc -->
+                <div class="pillars-row">
+                    
+                    <div class="pillar-box">
+                        <div class="pillar-top-meta">
+                            <span class="p-num">TRỤ CỘT 01</span>
+                            <span class="p-icon">🧠</span>
+                        </div>
+                        <h3>Tư duy phân tích & giải quyết vấn đề</h3>
+                        <ul class="pillar-bullet-points">
+                            <li>Không chỉ dừng ở kết quả mà luôn đào sâu tìm hiểu bản chất vấn đề và nguyên nhân gốc rễ.</li>
+                            <li>Tập trung tìm kiếm phương án giải quyết tối ưu và logic.</li>
+                            <li>Thể hiện rõ nét qua các bài toán Machine Learning, xử lý dữ liệu và thiết kế hệ thống.</li>
+                        </ul>
+                        <div class="pillar-pills">
+                            <span>Machine Learning</span>
+                            <span>Data Cleaning</span>
+                            <span>Root Cause</span>
+                        </div>
+                    </div>
+
+                    <div class="pillar-box">
+                        <div class="pillar-top-meta">
+                            <span class="p-num">TRỤ CỘT 02</span>
+                            <span class="p-icon">🔬</span>
+                        </div>
+                        <h3>Tự học và nghiên cứu</h3>
+                        <ul class="pillar-bullet-points">
+                            <li>Chủ động tìm hiểu kiến thức mới: lập trình, Data Science và các công nghệ mới nổi.</li>
+                            <li>Có xu hướng tự tay thử nghiệm, đào sâu bản chất thay vì chỉ làm theo khuôn mẫu có sẵn.</li>
+                            <li>Duy trì tinh thần tự nâng cấp kỹ năng mỗi ngày.</li>
+                        </ul>
+                        <div class="pillar-pills">
+                            <span>Python / SQL</span>
+                            <span>Self-Learning</span>
+                            <span>Research</span>
+                        </div>
+                    </div>
+
+                    <div class="pillar-box">
+                        <div class="pillar-top-meta">
+                            <span class="p-num">TRỤ CỘT 03</span>
+                            <span class="p-icon">💬</span>
+                        </div>
+                        <h3>Giao tiếp và diễn đạt</h3>
+                        <ul class="pillar-bullet-points">
+                            <li>Chú trọng truyền tải thông tin mạch lạc, dễ hiểu và đúng trọng tâm đối tượng nghe.</li>
+                            <li>Chủ động điều chỉnh nội dung theo ngữ cảnh thuyết trình hoặc thảo luận nhóm.</li>
+                            <li>Biết lắng nghe câu chuyện và góc nhìn của người khác để thấu hiểu bài toán.</li>
+                        </ul>
+                        <div class="pillar-pills">
+                            <span>Presentation</span>
+                            <span>Active Listening</span>
+                            <span>Teamwork</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Hộp công cụ kỹ thuật in trực tiếp -->
+                <div class="toolkit-bar">
+                    <span class="toolkit-lead">HỘP CÔNG CỤ CHUYÊN MÔN:</span>
+                    <div class="toolkit-chips">
+                        <span class="chip">Python</span>
+                        <span class="chip">SQL & Database</span>
+                        <span class="chip">Pandas / NumPy</span>
+                        <span class="chip">Thiết kế Use Case</span>
+                        <span class="chip">Kiểm thử hệ thống (QA)</span>
+                        <span class="chip">Quản lý nhóm (Team Leader)</span>
+                        <span class="chip">Thu thập & Chuẩn hóa dữ liệu</span>
+                        <span class="chip">Git / GitHub</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==============================================
+             SECTION 06: NHỮNG ĐIỀU TÔI ĐÃ THỰC HIỆN (DỰ ÁN)
+             Nền: Background7.jpg (Rêu xanh bình minh)
+             ============================================== -->
+        <section class="section-full" id="projects" style="--bg-url: url('images/Background7.jpg')">
+            <div class="bg-scrim"></div>
+
+            <div class="container section-container">
+                <div class="section-title-wrap">
+                    <span class="section-eyebrow">PHẦN 05</span>
+                    <h2 class="section-title">NHỮNG ĐIỀU TÔI ĐÃ THỰC HIỆN</h2>
+                    <p class="section-desc">Các dự án thực tế, trải nghiệm nghiên cứu khoa học và nỗ lực phát triển bản thân</p>
+                </div>
+
+                <!-- ==============================================
+                     ĐIỂM NHẤN: ẢNH PROJECT.JPG MINH CHỨNG NỖ LỰC NCKH
+                     ============================================== -->
+                <div class="project-award-showcase">
+                    <div class="award-photo-col">
+                        <div class="award-photo-frame">
+                            <img src="images/Project.jpg" alt="Minh chứng nỗ lực trong dự án nghiên cứu khoa học của Phan Hải Nam" class="award-img">
+                            <div class="award-tag-pill">
+                                <span>🎓</span>
+                                <div>
+                                    <strong>NGHIÊN CỨU KHOA HỌC</strong>
+                                    <small>Ghi nhận sự nỗ lực và kiên trì của bản thân</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="award-info-col">
+                        <span class="award-meta-kicker">SCIENTIFIC RESEARCH</span>
+                        <h3 class="award-title">Minh chứng cho sự nỗ lực trong Nghiên cứu khoa học</h3>
+                        
+                        <div class="award-narrative-points">
+                            <p>• Bức ảnh là minh chứng cho sự nỗ lực, tính kiên trì và tinh thần làm việc nghiêm túc của bản thân trong một dự án nghiên cứu khoa học.</p>
+                            <p>• Dấu mốc ghi nhận quá trình đào sâu học hỏi, thử nghiệm và tích lũy kinh nghiệm nghiên cứu thực tế quý báu.</p>
+                            <p>• Tiếp thêm động lực để tôi không ngừng trau dồi chuyên môn và bước tiếp trên con đường phát triển Khoa học dữ liệu.</p>
+                        </div>
+
+                        <div class="award-points-grid">
+                            <div class="point-item">
+                                <span class="p-label">HOẠT ĐỘNG</span>
+                                <strong class="p-val">Nghiên cứu khoa học (NCKH)</strong>
+                            </div>
+                            <div class="point-item">
+                                <span class="p-label">Ý NGHĨA</span>
+                                <strong class="p-val">Minh chứng cho sự nỗ lực bản thân</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 Dự án chi tiết được chia nhỏ theo từng ý rõ ràng -->
+                <div class="projects-tri-grid">
+                    
+                    <!-- Dự án 01 -->
+                    <div class="project-entry-card highlight-entry">
+                        <div class="entry-header">
+                            <span class="entry-idx">PROJECT 01</span>
+                            <span class="role-pill role-lead">👑 Nhóm trưởng (Team Leader)</span>
+                        </div>
+                        <h4 class="entry-title">Thiết kế mô phỏng hệ thống quản lý sinh viên</h4>
+                        
+                        <div class="entry-body">
+                            <div class="text-seg">
+                                <span class="seg-title">Mô tả dự án:</span>
+                                <ul class="proj-bullet-list">
+                                    <li>Hệ thống mô phỏng quản lý tài khoản sinh viên dành cho Admin.</li>
+                                    <li>Hỗ trợ giáo viên xem xét lịch dạy và danh sách lớp học.</li>
+                                    <li>Giúp sinh viên tra cứu thông tin cá nhân, thời khóa biểu và đăng ký môn học.</li>
+                                </ul>
+                            </div>
+                            <div class="text-seg">
+                                <span class="seg-title">Đóng góp của tôi:</span>
+                                <ul class="proj-bullet-list">
+                                    <li>Đảm nhận vai trò <strong>Nhóm trưởng</strong>: quản lý, phân tích đề bài và phân chia công việc cho thành viên.</li>
+                                    <li>Quyết định hướng triển khai kỹ thuật và trực tiếp tham gia xây dựng hệ thống.</li>
+                                    <li>Là người đại diện trình bày và bảo vệ hệ thống trước giáo viên.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="entry-footer">
+                            <a href="https://github.com/namph1377-sketch/SMS" target="_blank" rel="noopener noreferrer" class="github-action-btn">
+                                <span>Xem mã nguồn trên GitHub</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Dự án 02 -->
+                    <div class="project-entry-card">
+                        <div class="entry-header">
+                            <span class="entry-idx">PROJECT 02</span>
+                            <span class="role-pill role-qa">🔍 Phân tích & Kiểm thử (QA)</span>
+                        </div>
+                        <h4 class="entry-title">Thiết kế mô phỏng hệ thống quản lý thư viện</h4>
+                        
+                        <div class="entry-body">
+                            <div class="text-seg">
+                                <span class="seg-title">Mô tả dự án:</span>
+                                <ul class="proj-bullet-list">
+                                    <li>Hệ thống quản lý, mượn, trả và lưu trữ sách toàn diện.</li>
+                                    <li>Phục vụ đa đối tượng: sinh viên, thủ thư và quản trị viên trường.</li>
+                                </ul>
+                            </div>
+                            <div class="text-seg">
+                                <span class="seg-title">Đóng góp của tôi:</span>
+                                <ul class="proj-bullet-list">
+                                    <li>Phân tích yêu cầu đề bài và bóc tách quy trình nghiệp vụ thư viện.</li>
+                                    <li>Thiết kế mô hình chức năng (Use Case Diagram) và mô tả chi tiết từng quy trình.</li>
+                                    <li>Thực hiện kiểm thử (QA testing) hệ thống sau khi xây dựng mô hình và đưa ra phản hồi điều chỉnh.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="entry-footer">
+                            <a href="https://github.com/hoanhh4977/library-management-system" target="_blank" rel="noopener noreferrer" class="github-action-btn">
+                                <span>Xem mã nguồn trên GitHub</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Dự án 03 -->
+                    <div class="project-entry-card">
+                        <div class="entry-header">
+                            <span class="entry-idx">PROJECT 03</span>
+                            <span class="role-pill role-data">📊 Thu thập & Chuẩn hóa dữ liệu</span>
+                        </div>
+                        <h4 class="entry-title">Thiết kế công cụ tra cứu, tìm kiếm bài hát</h4>
+                        
+                        <div class="entry-body">
+                            <div class="text-seg">
+                                <span class="seg-title">Mô tả dự án:</span>
+                                <ul class="proj-bullet-list">
+                                    <li>Công cụ mô phỏng thanh tìm kiếm bài hát thông minh.</li>
+                                    <li>Tối ưu hóa khả năng tìm kiếm bài hát theo tên, ca sĩ và từ khóa mong muốn.</li>
+                                </ul>
+                            </div>
+                            <div class="text-seg">
+                                <span class="seg-title">Đóng góp của tôi:</span>
+                                <ul class="proj-bullet-list">
+                                    <li>Chịu trách nhiệm chính trong việc thu thập và chuẩn bị dữ liệu bài hát cùng các thành viên.</li>
+                                    <li>Tiền xử lý và chuẩn hóa các trường thông tin để phục vụ thuật toán tìm kiếm chính xác.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="entry-footer">
+                            <a href="https://github.com/namph1377-sketch/SearchSong" target="_blank" rel="noopener noreferrer" class="github-action-btn">
+                                <span>Xem mã nguồn trên GitHub</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==============================================
+             SECTION 07: HÃY KẾT NỐI VỚI TÔI
+             Nền: Background6.jpg (Đồi cát Nam Cương)
+             ============================================== -->
+        <section class="section-full" id="contact" style="--bg-url: url('images/Background6.jpg')">
+            <div class="bg-scrim"></div>
+
+            <div class="container section-container">
+                <div class="section-title-wrap">
+                    <span class="section-eyebrow">PHẦN 06</span>
+                    <h2 class="section-title">HÃY KẾT NỐI VỚI TÔI</h2>
+                    <p class="section-desc">Cảm ơn bạn đã dành thời gian tìm hiểu về tôi và hành trình của tôi</p>
+                </div>
+
+                <div class="contact-dual-layout">
+                    
+                    <!-- Cột thông tin liên lạc -->
+                    <div class="contact-info-col">
+                        <div class="contact-greeting">
+                            <p>Nếu muốn kết nối hoặc trao đổi thêm về các cơ hội học hỏi, hợp tác hay đơn giản là chia sẻ những câu chuyện thú vị, bạn có thể tìm thấy tôi qua những thông tin dưới đây:</p>
+                        </div>
+
+                        <div class="contact-rows-list">
+                            
+                            <!-- Zalo -->
+                            <div class="contact-row-item">
+                                <div class="item-icon">💬</div>
+                                <div class="item-text">
+                                    <span class="lbl">Zalo liên hệ:</span>
+                                    <strong class="val">0987654321</strong>
+                                </div>
+                                <button class="copy-btn" data-copy="0987654321" title="Sao chép số Zalo">
+                                    Sao chép
+                                </button>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="contact-row-item">
+                                <div class="item-icon">✉️</div>
+                                <div class="item-text">
+                                    <span class="lbl">Email chính thức:</span>
+                                    <strong class="val">namph1377@ut.edu.vn</strong>
+                                </div>
+                                <button class="copy-btn" data-copy="namph1377@ut.edu.vn" title="Sao chép Email">
+                                    Sao chép
+                                </button>
+                            </div>
+
+                            <!-- Facebook -->
+                            <a href="https://www.facebook.com/share/18xiyTJ2FK/" target="_blank" rel="noopener noreferrer" class="contact-row-item link-row">
+                                <div class="item-icon">📘</div>
+                                <div class="item-text">
+                                    <span class="lbl">Facebook cá nhân:</span>
+                                    <strong class="val">Phan Hải Nam</strong>
+                                </div>
+                                <span class="arrow-sym">↗</span>
+                            </a>
+
+                            <!-- GitHub -->
+                            <a href="https://github.com/namph1377-sketch" target="_blank" rel="noopener noreferrer" class="contact-row-item link-row">
+                                <div class="item-icon">🐙</div>
+                                <div class="item-text">
+                                    <span class="lbl">GitHub cá nhân:</span>
+                                    <strong class="val">namph1377-sketch</strong>
+                                </div>
+                                <span class="arrow-sym">↗</span>
+                            </a>
+
+                        </div>
+
+                        <div class="closing-quote-banner">
+                            <p>“Hy vọng chúng ta sẽ có cơ hội chia sẻ và học hỏi thêm nhiều điều thú vị từ nhau.”</p>
+                        </div>
+                    </div>
+
+                    <!-- Cột gửi tin nhắn nhanh -->
+                    <div class="contact-form-col">
+                        <div class="direct-form-wrapper">
+                            <h3 class="form-heading">Gửi tin nhắn trực tiếp</h3>
+                            <p class="form-sub">Tôi sẽ phản hồi trong thời gian sớm nhất</p>
+
+                            <form id="verticalContactForm" class="contact-form-fields">
+                                <div class="field-item">
+                                    <label for="usrName">Họ và tên của bạn</label>
+                                    <input type="text" id="usrName" name="name" placeholder="Ví dụ: Nguyễn Văn A" required>
+                                </div>
+
+                                <div class="field-item">
+                                    <label for="usrContact">Số điện thoại hoặc Email</label>
+                                    <input type="text" id="usrContact" name="contact" placeholder="Ví dụ: 0912... hoặc email@..." required>
+                                </div>
+
+                                <div class="field-item">
+                                    <label for="usrMsg">Lời nhắn gửi đến Hải Nam</label>
+                                    <textarea id="usrMsg" name="message" rows="4" placeholder="Nội dung bạn muốn trao đổi hoặc kết nối..." required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn-primary-coral btn-submit-full" id="submitBtn">
+                                    <span>Gửi lời nhắn</span>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                                </button>
+                            </form>
+
+                            <div class="form-alert-success" id="formAlertSuccess">
+                                <span class="alert-icon">✓</span>
+                                <div>
+                                    <strong>Đã gửi thành công!</strong>
+                                    <p>Cảm ơn bạn đã kết nối. Tôi sẽ sớm liên hệ lại!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Nút cuộn nhanh về đầu trang -->
+    <a href="#hero" class="scroll-top-btn" id="scrollTopBtn" title="Về đầu trang" aria-label="Về đầu trang">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </a>
+
+    <!-- Toast thông báo nhanh (Sao chép) -->
+    <div class="toast-bubble" id="toastBubble">
+        <span class="t-check">✓</span>
+        <span class="t-msg" id="toastMsg">Đã sao chép vào bộ nhớ tạm!</span>
+    </div>
+
+    <!-- Chân trang bản quyền -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© 2026 Phan Hải Nam. Portfolio cá nhân · Khoa học dữ liệu (Data Science).</p>
+            <p class="footer-sub">Data Science Student · Interested in Data Analyst & Business Analyst</p>
+        </div>
+    </footer>
+
+</body>
+</html>
